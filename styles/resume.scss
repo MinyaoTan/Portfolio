@@ -1,0 +1,59 @@
+@import 'globals/colors';
+@import 'globals/fonts';
+@import 'globals/sizes';
+
+@import 'components/nav';
+@import 'components/commonstyle';
+
+html {
+	height: 100%;
+	width: 100vw;
+
+	.heading {
+		font-family: $link-font;
+	}
+}
+
+.download {
+	text-align: center;
+	padding: 4rem;
+
+	a, a:visited {
+		color: $home-icon-color;
+		font-size: 2rem;
+		padding: 1rem;
+		background-color: #ffffff;
+		border: 2px $home-icon-color solid;
+		-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+
+		&:hover {
+			background-color: $home-icon-color;
+			text-decoration: none;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+	}
+}
+
+article {
+	padding-top: 0;
+	margin-left: $reg-width;
+	text-align: left;
+
+	.heading {
+		font-size: 2rem;
+	}
+
+	.container-fluid {
+		padding-top: 4rem;
+	}
+}
+
+@media screen and (max-width: $md-screen-size) {
+  .download a {
+  	font-size: 1rem;
+  }
+}
+

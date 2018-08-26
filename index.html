@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/index.css">
+		<title>Cheryl's Portfolio</title>
+	</head>
+
+	<body>
+		<div class="nav heading">
+			<nav id="nav-menu">
+				<a href="index.html">Home</a>
+				<!-- <a href="#">About</a> -->
+				<a href="resume.html">Resume</a>
+				<!-- <a href="#">Contact</a> -->
+			</nav>
+
+			<nav id="nav-bar">
+				<li id="home-icon-container"><a href="index.html"><i class="fa fa-home fa-4x"></i></a></li>
+				<li class="nav-icon-container" id="open-nav-btn"><a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars fa-4x"></i></a></li>
+				<li class="nav-icon-container" id="close-nav-btn"><a href="javascript:void(0);" class="icon" onclick="closeNav()"><i class="fa fa-bars fa-4x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/cheryl-tan-72176684" target="_blank"><i class="icon fa fa-linkedin fa-3x"></i></a></li>
+			</nav>
+		</div>
+
+		<article>
+			<div class="hidden-on-load"><img src="images/deco.jpg" alt="decoration"></div>
+
+			<div class="container-fluid" id="app">
+    		<div class="row">
+    			<div class="col-md-7 col-sm-12">
+            <h1 class="heading">Project</h1>
+            <h3 class="heading"><a href="https://minyaotan.github.io/fesc-redesign/" target="_blank">FESC Redesign</a></h3>
+            <subheading category="redesign" date="august 21, 2018"></subheading>
+            <p>This is a mock up redesign project of the <a href="http://floridaenergy.ufl.edu/" target="_blank">FESC website</a>. The goal of this project is to make the FESC website to have a consistent theme and be responsive. Just as a proof of concept, the homepage, research page, and the contact page are redesigned. In addition to sematic HTML, Sass is used for reusable code structure. On the research page, the energy data is obtained via US Energy Information Admistration API and drawn using Google Chart library. Lastly, Vue.js is used to create a template and applied on the sub-sections of the research page.</p>
+      		</div>
+
+    			<div class="col-md-5 shown-on-load">
+      			<img src="images/deco.jpg" alt="decoration">
+      		</div>
+      	</div>
+      </div>
+		</article>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+@import 'globals/colors';
+@import 'globals/fonts';
+@import 'globals/sizes';
+
+@import 'components/nav';
+@import 'components/commonstyle';
+
+html {
+	height: 100%;
+
+	.heading {
+		font-family: $link-font;
+	}
+}
+
+article {
+	padding-top: 30vh;
+	overflow: hidden;
+
+	.hidden-on-load {
+		display: none;
+		transition: opacity 1s ease-out;
+    
+		img {
+			height: 25vh;
+			width: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.shown-on-load img {
+		height: 100vh;
+		position: fixed;
+		top: 0;
+	}
+
+	.heading {
+		font-family: $heading-font;
+		font-style: italic;
+		font-weight: 800;
+		margin-top: 5rem;
+	}
+
+	.sub-heading {
+		font-weight: 800;
+	}
+
+	.date {
+		color: $date-color;
+		text-transform: uppercase;
+	}
+}
+
+p {
+	font-family: $main-font;
+	font-size: 2rem;
+}
+
+.category {
+	color: $category-color;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: $lg-screen-size) {
+
+  article {
+  	.shown-on-load {
+  		display: none;
+  	}
+  }
+}
+
+@media screen and (max-width: $md-screen-size) {
+  body .nav #nav-bar article .shown-on-load {
+  	display: none;
+  }
+}

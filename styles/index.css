@@ -1,0 +1,120 @@
+body {
+  height: 100%; }
+  body .nav {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 100%;
+    margin-top: 0; }
+    body .nav #nav-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      /*z-index: 1;*/
+      top: 0;
+      left: 0;
+      background-color: #2D2B2E;
+      overflow-x: hidden;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      padding-top: 25vh; }
+      body .nav #nav-menu a {
+        /*padding: 8px 8px 8px 32px;*/
+        padding: 2rem;
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+        body .nav #nav-menu a:hover {
+          color: #B9C1D3; }
+    body .nav #nav-bar {
+      position: fixed;
+      top: 0;
+      height: 100%;
+      width: 100px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      background-color: black;
+      text-align: center; }
+      body .nav #nav-bar li {
+        list-style: none;
+        padding: 2rem; }
+      body .nav #nav-bar #home-icon-container {
+        background-color: cadetblue; }
+      body .nav #nav-bar .nav-icon-container {
+        background-color: #2D2B2E; }
+      body .nav #nav-bar #close-nav-btn {
+        display: none; }
+      body .nav #nav-bar i {
+        color: darkgray; }
+      body .nav #nav-bar .fa-home {
+        color: white; }
+      body .nav #nav-bar .icon {
+        margin-top: 50%; }
+
+article {
+  margin-left: 70px;
+  position: absolute;
+  top: 0;
+  padding: 4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+@media screen and (max-width: 960px) {
+  body .nav #nav-bar {
+    width: 70px; }
+    body .nav #nav-bar i {
+      font-size: 32px; } }
+html {
+  height: 100%; }
+  html .heading {
+    font-family: "Montserrat"; }
+
+article {
+  padding-top: 30vh;
+  overflow: hidden; }
+  article .hidden-on-load {
+    display: none;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out; }
+    article .hidden-on-load img {
+      height: 25vh;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  article .shown-on-load img {
+    height: 100vh;
+    position: fixed;
+    top: 0; }
+  article .heading {
+    font-family: "Montserrat Alternates";
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 5rem; }
+  article .sub-heading {
+    font-weight: 800; }
+  article .date {
+    color: #91a5a3;
+    text-transform: uppercase; }
+
+p {
+  font-family: "Playfair Display";
+  font-size: 2rem; }
+
+.category {
+  color: #d3197f;
+  text-transform: uppercase; }
+
+@media screen and (max-width: 960px) {
+  article .shown-on-load {
+    display: none; } }
+@media screen and (max-width: 720px) {
+  body .nav #nav-bar article .shown-on-load {
+    display: none; } }
+
+/*# sourceMappingURL=index.css.map */

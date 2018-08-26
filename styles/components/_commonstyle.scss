@@ -1,0 +1,17 @@
+article {
+	margin-left: $lg-width;
+	position: absolute;
+	top: 0;
+	padding: 4rem;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: $lg-screen-size) {
+  body .nav #nav-bar {
+  	width: $lg-width;
+
+  	i {
+  		font-size: $lg-icon-size;
+  	}
+  }
+}
